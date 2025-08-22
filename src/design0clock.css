@@ -44,7 +44,7 @@ select{
     border: 1px solid #c3e2d2;
     border-radius: 5px;
 }
-main{
+#selected-city{
     padding: 20px;
     background: #ffffff;
     border-radius: 10px;
