@@ -1,14 +1,5 @@
 function updateClocks() {
 
-let joziElement = document.querySelector("#jozi");
-let joziDateElement = document.querySelector("#jozi .date");
-let joziTimeElement = document.querySelector("#jozi .time");
-
-let joziTime = moment().tz("Africa/Johannesburg");
-
-joziDateElement.innerHTML = joziTime.format("MMMM D, YYYY");
-joziTimeElement.innerHTML = `${joziTime.format("HH:mm:ss A")}`;
-
 let nyElement = document.querySelector("#ny");
 let nyDateElement = document.querySelector("#ny .date");
 let nyTimeElement = document.querySelector("#ny .time");
@@ -45,6 +36,9 @@ sydneyTimeElement.innerHTML = `${sydneyTime.format("HH:mm:ss A")}`;
 
 function updateTimezone(event) {
     let selectedTimezone = event.target.value;
+    if (selectedTimezone === "current") {
+        selectedTimezone = moment.tz.guess();
+    }
     let selectedCityTime = moment().tz(selectedTimezone);
     let selectedcityElement = document.querySelector("#selected-city");
     selectedcityElement.innerHTML = `

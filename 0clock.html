@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Lovers+Quarrel&family=Macondo&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Underdog&display=swap"
+        rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="src/design0clock.css"/>
@@ -11,11 +16,14 @@
 <body>
     <div class="container">
         <header>
-            <h1> World~Clock </h1>
+            <h1>
+                <a href="0clock.html">World Clock</a>
+            </h1>
             <div class="selection">
             <label for="timezone-select">Select a timezone:</label>
             <select id="timezone-select">
                 <option value="">Select a city</option>
+                <option value="current">Current Location</option>
                 <option value="Atlantic/Cape_Verde">Cape Verde</option>
                 <option value="America/New_York">New York</option>
                 <option value="Africa/Maputo">Maputo</option>
@@ -28,12 +36,6 @@
         <main>
             <hr/>
             <div id="selected-city">
-            <div class="clock" id="jozi">
-                <h2>Johannesburg</h2>
-                <div class="time" id="time">19:00:20</div>
-                <div class="date" id="date"> August 20, 2025</div>
-            </div>
-            <hr/>
             <div class="clock" id="ny">
                 <h2>New York</h2>
                 <div class="time" id="timeNY">12:00:20</div>
@@ -62,7 +64,7 @@
     </div>
     <footer>
         <p> 
-            Coded by Cindy Nkosi and is open sourced on <a href="https://github.com/nkatekoCossa/Time-Around-The-World" target="_blank" rel="noopener noreferrer"> GitHub </a> and hosted on <a href="https://flyraoundtheworld.netlify.app/" target="_blank" rel="noopener noreferrer">Netlify</a>
+            Coded by Cindy Nkosi and is open sourced on <a href="https://github.com/nkatekoCossa/Time-Around-The-World" target="_blank" rel="noopener noreferrer"> GitHub </a> and hosted on <a href="https://flyraoundtheworld.netlify.app/" target="_blank" rel="noopener noreferrer">Netlify.</a>
         </p>
     </footer>
 
