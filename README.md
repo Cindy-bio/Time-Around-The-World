@@ -1,2 +1,0 @@
-# Time Around The World
-
