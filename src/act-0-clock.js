@@ -34,6 +34,9 @@ sydneyDateElement.innerHTML = sydneyTime.format("MMMM D, YYYY");
 sydneyTimeElement.innerHTML = `${sydneyTime.format("HH:mm:ss A")}`;
 }
 
+updateClocks();
+setInterval(updateClocks, 1000);
+
 function updateTimezone(event) {
     let selectedTimezone = event.target.value;
     if (selectedTimezone === "current") {
@@ -49,7 +52,6 @@ function updateTimezone(event) {
     </div>
     `;
 }
-updateClocks();
-setInterval(updateClocks, 1000);
+
 let timezoneSelect = document.querySelector("#timezone-select");
 timezoneSelect.addEventListener("change", updateTimezone);
