@@ -7,9 +7,9 @@ body{
 }
 .container{
     font-family: "Exo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     display: block;
     background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
     margin: 0 auto;
@@ -64,8 +64,8 @@ select{
 }
 .time, .date{
     font-family: "Macondo", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
     font-size: 18px;
     margin-top: 0px;
     color: #333;
